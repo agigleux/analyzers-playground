@@ -1,0 +1,29 @@
+{ "issues": [
+    {
+      "engineId": "test",
+      "ruleId": "rule1",
+      "severity":"BLOCKER",
+      "type":"SECURITY_HOTSPOT",
+      "primaryLocation": {
+        "message": "fully-fleshed issue",
+        "filePath": "src/main/java/org/sonarlint/hotspots/VeryNotSecuredCode.java",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 23,
+          "endColumn": 29
+        }
+      },
+      "effortMinutes": 90
+    },
+    {
+      "engineId": "test",
+      "ruleId": "rule2",
+      "severity": "INFO",
+      "type": "BUG",
+      "primaryLocation": {
+        "message": "minimal issue raised at file level",
+        "filePath": "src/main/java/org/sonarlint/hotspots/VeryNotSecuredCode.java"
+      }
+    }
+]}
