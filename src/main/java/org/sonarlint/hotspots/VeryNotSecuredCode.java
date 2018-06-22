@@ -24,5 +24,10 @@ public class VeryNotSecuredCode {
   public void S4432() throws NoSuchAlgorithmException, NoSuchPaddingException {
     Cipher c1 = Cipher.getInstance("AES/ECB/NoPadding");
   }
+  
+  public void newHotspot(String rawText) throws NoSuchAlgorithmException, NoSuchPaddingException {
+    Cipher c = Cipher.getInstance("DESede/ECB/PKCS5Padding");
+  }
+
 
 }
