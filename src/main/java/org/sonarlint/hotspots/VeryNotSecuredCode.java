@@ -21,4 +21,8 @@ public class VeryNotSecuredCode {
     MessageDigest md = MessageDigest.getInstance("SHA1");
   }
 
+  public void S4432() throws NoSuchAlgorithmException, NoSuchPaddingException {
+    Cipher c1 = Cipher.getInstance("AES/ECB/NoPadding");
+  }
+
 }
