@@ -8,6 +8,11 @@ import javax.servlet.http.Cookie;
 
 public class VeryNotSecuredCode {
 
+  public Cookie createCookie2() {
+    Cookie cookie = new Cookie("myCookieName", "12");
+    return cookie;
+  }
+  
   public Cookie createCookie() {
     Cookie cookie = new Cookie("myCookieName", "12");
     return cookie;
