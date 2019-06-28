@@ -123,11 +123,13 @@
 			<scope>test</scope>
 		</dependency>
 
+<!--
 		<dependency>
 			<groupId>com.android.support</groupId>
 			<artifactId>support-annotations</artifactId>
 			<version>27.1.1</version>
 		</dependency>
+		  -->
 		<dependency>
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>
