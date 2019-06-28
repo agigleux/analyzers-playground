@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class Reproducer {
 
+/*
   public int m1(Map<String, List<String>> map1, Map<Integer, Set<String>> map2) {
     for (String u : map1.keySet()) {
       Optional<Integer> v = map2.entrySet().stream().filter(entry -> entry.getValue().contains(u)).map(Map.Entry::getKey).findFirst();
@@ -29,5 +30,6 @@ public class Reproducer {
     }
     return 0;
   }
+*/
 
 }
