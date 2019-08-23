@@ -3,6 +3,7 @@ import java.util.function.Supplier;
 
 public class OrElseGetReproducer {
 
+/*
   public static final String apiCallWithValue() {
     return "MyValue";
   }
@@ -28,5 +29,5 @@ public class OrElseGetReproducer {
     System.out.println(value.orElseGet(supplier)); // Noncompliant; NPE will be raised at runtime
     System.out.println(value.orElseGet(null)); // Noncompliant; NPE will be raised at runtime
   }
-
+*/
 }
