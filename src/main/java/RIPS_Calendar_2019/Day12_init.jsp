@@ -1,0 +1,1 @@
+<% customClass = request.getParameter("customClass"); %>
