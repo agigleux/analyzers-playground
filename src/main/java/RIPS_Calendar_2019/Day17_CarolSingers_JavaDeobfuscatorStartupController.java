@@ -48,6 +48,25 @@ public class Day17_CarolSingers_JavaDeobfuscatorStartupController extends HttpSe
 
             sysPathsField.set(null, null);
 
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+            sysPathsField.set(null, null);
+
             System.loadLibrary("DEOBFUSCATION_LIB");
         } catch (Exception e) {
             response.sendRedirect("/");
