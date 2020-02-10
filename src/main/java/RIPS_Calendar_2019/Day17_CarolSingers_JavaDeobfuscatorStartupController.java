@@ -45,6 +45,9 @@ public class Day17_CarolSingers_JavaDeobfuscatorStartupController extends HttpSe
             final Field sysPathsField = ClassLoader.class.getDeclaredField("sys_paths");
             sysPathsField.setAccessible(true);
             sysPathsField.set(null, null);
+
+            sysPathsField.set(null, null);
+
             System.loadLibrary("DEOBFUSCATION_LIB");
         } catch (Exception e) {
             response.sendRedirect("/");
