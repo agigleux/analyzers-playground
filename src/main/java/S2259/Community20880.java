@@ -9,13 +9,13 @@ import org.apache.commons.collections.MapUtils;
 
 public class Community20880 {
 
-  private void privateMethod1(Map<Long, ContractDefContextEntity> aMap, List<String> aList) {
+  private void privateMethod1(Map<String, ContractDefContextEntity> aMap, List<String> aList) {
     if (aMap == null) {
       // Empty
     }
 
     if (!MapUtils.isEmpty(aMap)) {
-      aMap.get("123"); // FP with SonarJava 6.1
+      aMap.get("123"); // FP with SonarJava 6.1, 6.2
     }
 
     if (aList == null) {
@@ -26,11 +26,11 @@ public class Community20880 {
     }
   }
 
-  private void privateMethod2(Map<Long, ContractDefContextEntity> aMap, List<String> aList) {
+  private void privateMethod2(Map<String, ContractDefContextEntity> aMap) {
     if (aMap == null) {
 
       if (!MapUtils.isEmpty(aMap)) {
-        aMap.get("123"); // TP with SonarJava 6.1
+        aMap.get("123"); // TP with SonarJava 6.1, 6.2
       }
 
     }
@@ -38,7 +38,7 @@ public class Community20880 {
     if (aMap != null) {
 
       if (!MapUtils.isEmpty(aMap)) {
-        aMap.get("123"); // Compliant: TN with SonarJava 6.1
+        aMap.get("123"); // Compliant: TN with SonarJava 6.1, 6.2
       }
 
     }
