@@ -9,7 +9,7 @@ import org.apache.commons.collections.MapUtils;
 
 public class Community20880 {
 
-  private void privateMethod1(Map<String, ContractDefContextEntity> aMap, List<String> aList) {
+  private void privateMethodCommonsCollections1(Map<String, ContractDefContextEntity> aMap, List<String> aList) {
     if (aMap == null) {
       // Empty
     }
@@ -25,8 +25,8 @@ public class Community20880 {
       aList.get(1); // Compliant: no issue raised with SonarJava 6.1 for List
     }
   }
-
-  private void privateMethod2(Map<String, ContractDefContextEntity> aMap) {
+  
+  private void privateMethodCommonsCollections2(Map<String, ContractDefContextEntity> aMap) {
     if (aMap == null) {
 
       if (!MapUtils.isEmpty(aMap)) {
@@ -38,10 +38,29 @@ public class Community20880 {
     if (aMap != null) {
 
       if (!MapUtils.isEmpty(aMap)) {
-        aMap.get("123"); // Compliant: TN with SonarJava 6.1, 6.2
+        aMap.get("123"); // Compliant: TN with SonarJava 6.1, 6.2 for List
       }
 
     }
   }
+
+  private void privateMethodSpringCollectionUtils(Map<String, ContractDefContextEntity> aMap, List<String> aList) {
+    if (aMap == null) {
+      // Empty
+    }
+
+    if (!org.springframework.util.CollectionUtils.isEmpty(aMap)) {
+      aMap.get("123"); // Compliant: TN with SonarJava 6.1, 6.2 for Map
+    }
+
+    if (aList == null) {
+      // Empty
+    }
+    if (!org.springframework.util.CollectionUtils.isEmpty(aList)) {
+      aList.get(1); // Compliant: TN with SonarJava 6.1, 6.2 for List
+    }
+  }
+
+  
 
 }
