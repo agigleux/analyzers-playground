@@ -30,6 +30,26 @@ public class S2139 {
     }
   }
 
+  public void executeSQL2(Connection con, String sqlQuery) throws MySQLException {
+    Statement stmt = null;
+    try {
+      stmt = con.createStatement();
+      stmt.execute(sqlQuery);
+    } catch (SQLException e) {
+      LOGGER.error("SQLException", e);
+      throw new MySQLException(e);
+    } finally {
+      if (stmt != null) {
+        try {
+          stmt.close();
+        } catch (SQLException e) {
+          LOGGER.error("SQLException", e);
+          throw new MySQLException(e);
+        }
+      }
+    }
+  }  
+  
   public class MySQLException extends Exception {
 
     public MySQLException(SQLException e) {
