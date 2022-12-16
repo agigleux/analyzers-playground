@@ -43,21 +43,6 @@ public class S2139 {
       }
 
       Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
-      Runtime.getRuntime().exec(cmd);
   }
   
   public class MySQLException extends Exception {
