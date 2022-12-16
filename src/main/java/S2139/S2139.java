@@ -6,9 +6,6 @@ import java.sql.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import javax.servlet.http.HttpServletRequest;
-
 public class S2139 {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(S2139.class);
@@ -31,18 +28,6 @@ public class S2139 {
         }
       }
     }
-  }
-
-  public void runUnsafeMatches(HttpServletRequest request) throws IOException {
-      String folder = request.getParameter("folder");
-
-      String cmd = "mkdir " + folder;
-
-      if (!cmd.matches("mkdir [a-zA-Z]++")) {
-          throw new IllegalArgumentException();
-      }
-
-      Runtime.getRuntime().exec(cmd);
   }
   
   public class MySQLException extends Exception {
