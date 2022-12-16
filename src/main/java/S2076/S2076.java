@@ -26,21 +26,6 @@ public class S2076 {
         }
 
         Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
-        Runtime.getRuntime().exec(cmd);
     }
 
 
