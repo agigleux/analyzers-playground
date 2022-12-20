@@ -1,4 +1,4 @@
-package Brian20200106;
+package sql;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.*;
 
-public class VulnerableServlet extends HttpServlet {
+public class VulnerableServletBis extends HttpServlet {
 
     private static VulnerableParams vulnerableParams = new VulnerableParams();
 

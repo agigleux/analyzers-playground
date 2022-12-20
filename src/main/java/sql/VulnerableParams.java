@@ -1,4 +1,4 @@
-package Brian20200106;
+package sql;
 
 public class VulnerableParams {
 
