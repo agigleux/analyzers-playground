@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 public class S2139 {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(S2139.class);
+  private static final Logger LOGGER2 = LoggerFactory.getLogger(S2139.class);
 
   public void executeSQL(Connection con, String sqlQuery) throws MySQLException {
     Statement stmt = null;
